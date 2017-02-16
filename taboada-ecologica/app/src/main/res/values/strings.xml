@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">taboada-ecologica</string>
+    <string name="btnConferir">Conferir Resultado</string>
+    <string name="msgVencedor">Voce Venceu!</string>
+</resources>
