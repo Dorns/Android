@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pizzaria</string>
+    <string-array name="formaPagto">
+        <item></item>
+        <item>Crédito</item>
+        <item>Débito</item>
+        <item>Dinheiro</item>
+    </string-array>
+    <string name="lblFormaPagto">Pagamento:</string>
+    <string name="lblSabor">Sabor:</string>
+    <string name="lblTamanho">Tamanho:</string>
+</resources>
