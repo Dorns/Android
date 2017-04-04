@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fiap.votacao.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBrasao"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/brasao"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RadioGroup
+        android:id="@+id/rgCargo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBrasao"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RadioButton
+            android:id="@+id/rbPrefeito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/lblPrefeito" />
+
+        <RadioButton
+            android:id="@+id/rbVereador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblVereador" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spCandidato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgCargo"></Spinner>
+
+    <Button
+        android:id="@+id/btnVotar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spCandidato"
+        android:layout_centerHorizontal="true"
+        android:onClick="votar"
+        android:text="@string/btnVotar" />
+
+    <TextView
+        android:id="@+id/txtPrefeito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVotar"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/lblPrefeito" />
+    <TextView
+        android:id="@+id/txtVereador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrefeito"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/lblVereador" />
+
+</android.support.constraint.ConstraintLayout>
