@@ -1,0 +1,9 @@
+<resources>
+<string name="app_name">BancoOnLine</string>
+
+<string-array name="menu">
+    <item>Conta Corrente</item>
+    <item>Aplicação</item>
+    <item>Sair</item>
+</string-array>
+</resources>
